@@ -22,7 +22,7 @@ class Dino
   def age_metrics
     return 0 unless health.positive? && age > 1
 
-    age / 2
+    (age / 2).to_i
   end
 
   def to_h
